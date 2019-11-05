@@ -1,0 +1,31 @@
+<div class="container">
+  <h1 class="title">Todo list</h1>
+  <ul>
+    <li
+      [className]="item.checked ? 'check2' : 'check1'"
+      *ngFor="let item of todolist"
+      type="item"
+    >
+      <span
+        [className]="item.checked ? 'checkmark2' : 'checkmark'"
+        (click)="checked(item)"
+        class="checkmark"
+      ></span>
+      {{ item.name }}
+      <span (click)="remove(item)" class="close">x</span>
+    </li>
+  </ul>
+  <br />
+  <input
+    id="inputunvalusu"
+    #newtodo
+    type="text"
+    class="inputbox"
+    placeholder="add a new todo..."
+    (keyup.enter)="AddToDoo(newtodo.value)"
+    (onblur)="AddToDoo(newtodo.value); newtodo.value = ''"
+  />
+  <button (click)="AddToDoo(newtodo.value)" class="buton" type="submit">
+    Add
+  </button>
+</div>

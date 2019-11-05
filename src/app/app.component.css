@@ -1,0 +1,90 @@
+.container {
+  position: absolute;
+  width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  background-color: white;
+}
+
+ul li {
+  width: 40%;
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  font-size: 17px;
+  border-bottom: 1px solid grey;
+  color: aqua;
+}
+
+
+.buton {
+  background-color: white;
+  width: 4%;
+  position: relative;
+  padding: 9px;
+  font-size: 15px;
+  border-radius: 3px;
+  font-weight: 00;
+  border: none;
+}
+
+.inputbox {
+  position: relative;
+  width: 20%;
+  padding: 10px;
+  float: left;
+  border-radius: 3px;
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+  border-right-color: grey;
+}
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 9px 12px 9px 12px;
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  opacity: 0.2;
+  color: black;
+}
+
+.tik {
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  height: 15px;
+  width: 7px;
+  color: aqua;
+  font-weight: 999;
+}
+
+.tik:checked {
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  height: 15px;
+  width: 7px;
+  color: red;
+  font-weight: 999;
+}
+
+.title {
+  position: relative;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: aqua;
+}
