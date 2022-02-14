@@ -10,7 +10,7 @@ import { isNgTemplate } from '@angular/compiler';
 })
 export class ListComponent implements OnInit {
   todolist: Todos[];
-  deneeff
+  deneefffff
   constructor(private todolistservice: TodosService) { }
 
   // public GetAll() {
